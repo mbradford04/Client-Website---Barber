@@ -1,0 +1,647 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Montserrat;
+  background-color: black;
+}
+
+/* Banner Section Styling */
+.banner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  font-size: 3rem;
+  font-weight: bold;
+  overflow: hidden;
+  text-transform: uppercase;
+  z-index: 1;
+
+}
+
+.text-header {
+
+  font-family: alconica;
+  color: antiquewhite;
+}
+
+/* Keyframe animation for fluid movement */
+@keyframes moveText {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.banner-text {
+  white-space: nowrap;
+  animation: moveText 10s linear infinite;
+  will-change: transform; 
+  animation-delay: 1s;
+}
+
+@font-face {
+  font-family: 'alconica';
+  src: url('path-to-font.woff2') format('woff2');
+  font-display: swap;
+}
+
+@keyframes moveText {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Video Section */
+.video-section {
+  position: relative;
+  width:auto; /* Full width of the viewport */
+  height: 100vh; /* Full height of the viewport */
+  overflow: hidden; 
+  padding: 50px;
+  margin-top: 100px;
+  /* Ensure content does not overflow */
+}
+
+/* Video Styling */
+.background-video {
+  position: absolute; /* Position the video as a background */
+  top: 50%; /* Align it vertically to the middle */
+  left: 50%; /* Align it horizontally to the middle */
+  width: 100%; /* Make video stretch across the full width */
+  height: 100%; /* Make video stretch across the full height */
+  object-fit: cover; /* Ensure the video covers the entire container without distortion */
+  transform: translate(-50%, -50%); /* Center the video exactly in the container */
+}
+
+/* Video Overlay */
+.video-overlay {
+  position: absolute;
+  top: 50%; /* Center overlay vertically */
+  left: 50%; /* Center overlay horizontally */
+  transform: translate(-50%, -50%); /* Precisely center it */
+  text-align: center;
+  color: antiquewhite;
+}
+
+/* Title and Paragraph Styling */
+.video-overlay h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.video-overlay p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+/* image section of transitions */
+ /* Section Container */
+ .image-columns-template {
+  display: flex;                 /* Enables a flexbox layout */
+  justify-content: space-between; /* Creates space between the columns */
+  gap: 20px;                     /* Space between columns */
+  flex-wrap: wrap;                /* Allows the columns to stack on smaller screens */
+  padding: 20px;
+
+}
+
+/* Each Column */
+.column {
+  flex: 1;                        /* Makes each column take equal width */
+  max-width: 48%;                  /* Prevents the columns from stretching too far */
+  display: flex;
+  flex-direction: column;          /* Stacks the images vertically in each column */
+  gap: 10px;
+  position: relative;              /* Position relative to allow absolute positioning of images */
+  overflow: hidden;
+
+}
+
+/* Animation for the first column (left column) with 6-second transitions */
+.column:first-child img {
+  animation: fadeInOut 5s infinite; /* 6 seconds for the first column */
+}
+
+/* Animation for the second column (right column) with 3-second transitions */
+.column:nth-child(2) img {
+  animation: fadeInOut 8s infinite; /* 3 seconds for the second column */
+}
+
+.column:last-child img {
+  animation: fadeInOut 10s infinite; /* 6 seconds for the first column */
+}
+
+/* Animation for the second column (right column) with 3-second transitions */
+.column:nth-child(2) img {
+  animation: fadeInOut 13s infinite; /* 3 seconds for the second column */
+}
+
+/* Keyframes for image transitions */
+@keyframes fadeInOut {
+  0%, 100% {
+    opacity: 0; /* Images are invisible at the start and end */
+  }
+  50% {
+    opacity: 1; /* Images become fully visible in the middle */
+  }
+}
+
+/* Image Styling */
+.column img {
+  width: 40%;                    /* Ensures images are responsive */
+  height: 325px;
+  margin: 25px auto;               /* Keeps the aspect ratio */
+  object-fit: cover;              /* Ensures the images cover the space without distortion */
+  border-radius: 20px;
+  
+}
+
+
+    /* Animation for the first column (left column) with 6-second transitions */
+.column:first-child img {
+  animation: fadeInOut 5s infinite; /* 6 seconds for the first column */
+}
+
+/* Animation for the second column (right column) with 3-second transitions */
+.column:nth-child(2) img {
+  animation: fadeInOut 8s infinite; /* 3 seconds for the second column */
+}
+
+.column:last-child img {
+  animation: fadeInOut 10s infinite; /* 6 seconds for the first column */
+}
+
+/* Animation for the second column (right column) with 3-second transitions */
+.column:nth-child(2) img {
+  animation: fadeInOut 13s infinite; /* 3 seconds for the second column */
+}
+
+
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .image-columns-template{
+    flex-direction: column;       /* Stack columns on smaller screens */
+    align-items: center;  
+       /* Centers the columns */
+  }
+
+  .column {
+    max-width: 100%;  
+    display: flex;
+    align-items: center;             /* Each column takes up the full width on mobile */
+  }
+
+    /* Image Styling */
+.column img {
+  width: 50%;                    /* Ensures images are responsive */
+  height: 50%;              /* Keeps the aspect ratio */
+  object-fit: cover;              /* Ensures the images cover the space without distortion */
+  border-radius: 20px;
+  margin: auto;  
+}
+}
+
+
+
+
+
+
+
+/* Main Section Styling */
+.main-section {
+  background-image: url(../Images/utensils.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 40px;
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.left-column {
+  flex: 1;
+  min-width: 200px;
+}
+
+.right-column {
+  flex: 1;
+  min-width: 300px;
+  background-color: antiquewhite;
+  color:brown;
+  border-radius: 10px;
+  padding: 30px;
+  font-size: 2rem;
+}
+
+.right-column h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color:brown;
+}
+
+.right-column p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.von-image {
+  width: 70%;
+  margin: auto;
+  border-radius: 10px;
+}
+
+.von-title{
+  text-align: center;
+  color: brown;
+  text-decoration: underline brown;
+}
+
+
+.von-title-div{
+  background-color: antiquewhite;
+  padding: 15px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+.von-right-column-text {
+  text-align: center;
+}
+
+/* Footer Section Styling */
+.footer-section {
+  padding: 30px 20px;
+  background-color: black;
+  text-align: center;
+  line-height: 50px;
+  background-color: antiquewhite;
+  color: brown;
+}
+
+
+
+.footer-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  gap: 10px; 
+}
+
+.footer-list li {
+  display: block; 
+}
+
+.footer-list a {
+  text-decoration: none;
+  color: white;
+  font-size: 5rem;
+  font-weight: bolder;
+  padding: 5px 10px;
+}
+
+.footer-list a:hover {
+  color: #63a758;
+  text-decoration: underline;
+}
+
+
+
+
+.footer-navigation-image{
+  border-radius: 10px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.navigation-div{
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  height: 39rem;
+}
+
+.navigation{
+  background-color: antiquewhite;
+}
+
+
+
+.logo-instagram{
+  color: brown;
+  display: flex;
+}
+
+/* Responsive Design for Tablets */
+@media (max-width: 768px) {
+  .banner {
+    height: 80px;
+}
+
+  .banner-text {
+    font-size: 2.5rem;
+  }
+
+  .slideshow-container {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 5px; 
+    justify-content: space-between;
+  }
+
+
+  .slide-column {
+    height: auto;
+    position: relative;
+    overflow: hidden
+  }
+
+  .main-container {
+    flex-direction: column; 
+  }
+ 
+
+  .left-column, .right-column {
+    min-width: 100%;
+  }
+
+  .footer-list {
+    flex-direction: column; 
+    gap: 10px;
+  }
+
+  
+ 
+  .slide-column {
+    flex: 0 0 48%; 
+    height: auto;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .img-container {
+    width: 100%;
+    height: auto; 
+    opacity: 0;
+    position: relative;
+    transition: opacity 1s ease-in-out;
+  }
+
+  .slide-column .img-container img {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    object-fit: cover; 
+  }
+
+  .von-title{
+    color: brown;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+  }
+
+
+
+  /* Show only images from the first column on mobile */
+  .slide-column:nth-child(3) {
+    display: none; 
+  }
+
+  /* Adjust animation to work better on smaller screens */
+  .slide-column:nth-child(1) .img-container:nth-child(1) {
+    animation: columnSlide 10s infinite;
+  }
+
+
+  .slide-column:nth-child(1),
+  .slide-column:nth-child(2) {
+    flex: 0 0 48%; 
+    height: auto; 
+    position: relative;
+    overflow: hidden;
+  }
+
+  .slide-column:nth-child(1) .img-container:nth-child(2),
+  .slide-column:nth-child(2) .img-container:nth-child(2) {
+    animation: columnSlide 10s infinite;
+    animation-delay: 5s; 
+  }
+}
+
+
+/* Media Queries for Mobile Devices */
+
+/* For small mobile screens such as 320px */
+@media (max-width: 480px) {
+  .banner {
+    height: 70px; 
+    font-size: 2rem; 
+  }
+
+  .banner-text {
+    font-size: 2.5rem;
+  }
+
+  .slideshow-container {
+    flex-direction: column; 
+    gap: 10px;
+  }
+
+  .slide-column {
+    flex: 1 100%; 
+    height: auto; 
+    margin-bottom: 10px;
+  }
+
+  .img-container {
+    width: 100%;
+    height: auto; 
+  }
+
+  .main-container {
+    flex-direction: column; 
+  }
+
+  .left-column, .right-column {
+    min-width: 100%; 
+  }
+
+  .right-column h2 {
+    font-size: 1.5rem;
+  }
+
+  .right-column p {
+    font-size: 0.9rem;
+  }
+
+  .footer-list {
+    flex-direction: column;
+    font-size: 1rem;
+    gap: 5px; 
+  }
+
+  .footer-list a {
+    font-size: 3rem;
+    padding: 3px 7px; 
+  }
+
+  .footer-navigation-image{
+    width:100%;
+  }
+
+  .ig-logo {
+    width: 40px; 
+    height: 40px;
+}
+
+.left-column img{
+  display: flex;
+  align-items: center;
+}
+
+/* video */
+/* Video Section */
+.video-section {
+  width: 100%; /* Full width of the viewport */
+  height: 100%; /* Full height of the viewport */
+  padding: 10px;/* Ensure content does not overflow */
+}
+
+
+
+
+
+/* Video Overlay */
+.video-overlay h2 p  {
+  position: absolute;
+  top: 10%; /* Center overlay vertically */
+  left: 50%; /* Center overlay horizontally */
+  transform: translate(-50%, -50%); /* Precisely center it */
+  text-align: center;
+  color: antiquewhite;
+  font-size: 2px;
+  margin-top: 50px;
+}
+
+
+
+
+
+  /* Pop-up Modal Styles */
+  .popup{
+    height: 40%;
+    width: 60%;
+  }
+  .popup-content {
+    width: 65%;
+    max-width: 65%; 
+  }
+
+  .popup-text {
+    font-size: 1rem; 
+  }
+
+  .book-button {
+    padding: 8px 15px; 
+    font-size: 1rem;
+  }
+}
+
+
+/* For mobile-specific styling, add a reduced cycle time for better experience */  
+@keyframes columnSlide {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Pop-up Modal Styles */
+.popup {
+  display: none; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  color: antiquewhite;
+
+}
+
+.popup-content {
+  background-color: white;
+  padding: 20px;
+  width: 40%; 
+  max-width: 300px;
+  border-radius: 10px;
+  text-align: center;
+  background-color: brown;
+  color: antiquewhite;
+}
+
+.video-container {
+  margin: 20px 0;
+  width: 100%;
+}
+
+.popup-text {
+  font-size: 1.1rem;
+  color: antiquewhite;
+  margin: 20px 0;
+}
+
+.book-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: antiquewhite;
+  color: brown;
+  font-size: 1.2rem;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.book-button:hover {
+  background-color: #4c8d46;
+}
+
+/* Popup visibility and functionality */
+.popup.show {
+  display: flex;
+}
+
+/* Ensure that any mobile device is properly handling the video and text within the popup */
+.popup video {
+  max-width: 100%;
+  height: auto;
+}
+
+.underline{
+  text-decoration: underline;
+}

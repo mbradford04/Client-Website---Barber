@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="./Images/von_image.jpg" />
+    <link rel="stylesheet" href="CSS/index.css">
+    <title>Von Master Barber</title>
+    <!-- Preload Key Images -->
+    <link rel="preload" href="Images/cut1.jpg" as="image">
+    <link rel="preload" href="Images/cut2.jpg" as="image">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="banner">
+            <div class="banner-text">
+                <p class="text-header">V.T.B</p>
+            </div>
+        </div>
+    </header>
+   
+    <!--Video Section-->
+    <section class="video-section">
+        <video class="background-video" autoplay loop muted>
+            <source src="Videos/header-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="video-overlay">
+            <h2>Remembered Experience, Master Barber</h2>
+            <p>Experience high-quality content like never before. Enjoy the seamless view of our service offerings.</p>
+        </div>
+    </section>
+    <div class="von-title-div">
+        <h1 class="von-title">Von The Barber</h1>
+    </div>
+    <!--Image Section -->
+    <section class="image-columns-template">
+        <div class="column">
+          <img src="Images/cut1.jpg" alt="Image 1">
+          <img src="Images/cut2.jpg" alt="Image 2">
+        </div>
+        <div class="column">
+          <img src="Images/cut3.jpg" alt="Image 3">
+          <img src="Images/cut4.jpg" alt="Image 4">
+        </div>
+      </section>
+    
+
+    <!-- Main Content Section -->
+    <main class="main-section">
+        <div class="main-container">
+            <div class="left-column">
+                <img class="von-image" src="Images/von_image.jpg" alt="Barber Shop Image" loading="lazy">
+            </div>
+            <div class="right-column">
+                <h2 class="von-right-column-text">Welcome To Master Barber Von</h2>
+                <p class="von-right-column-text">
+                    Here At Von Master Barber, I provide top-notch grooming and styling services for all types of hair. Our team of professional barbers is dedicated to delivering personalized service that caters to your unique style and preferences. Whether you're looking for a classic cut, a modern fade, or a beard trim, we ensure that every client leaves our shop feeling confident and fresh. Our atmosphere is welcoming and relaxing, with the latest grooming tools and products to ensure that your experience is nothing short of exceptional. Book you appointment 
+                    <a href="https://app.thecut.co/barbers/VTBcuts">here today</a> to receive your blessing from Maser Barber Von!
+                </p>
+            </div>
+        </div>
+    </main>
+    <!--Navigation-->
+    <div class="navigation">
+        <a href="https://www.google.com/maps/place/Shave+Barbershop/@38.6337518,-90.2172344,15z/data=!4m6!3m5!1s0x87d8b54c7938f571:0x2ab63df5c819a3fb!8m2!3d38.6337522!4d-90.2069561!16s%2Fg%2F11bv3ycb44?entry=ttu&g_ep=EgoyMDI1MDEwMS4wIKXMDSoASAFQAw%3D%3D">
+            <div class="navigation-div"><img class="footer-navigation-image" src="Images/location.jpg" alt=""></div>
+        </a>
+    </div>
+      <!-- Footer Section -->
+      <footer class="footer-section">
+        <ul class="footer-list">
+            <li class="underline">Shave BarberShop:</li>
+            <li>1912 Washington Ave. Sain Louis, MO 63103</li>
+            <li class="underline">Cell: 314-580-3474</li>
+            <li class="underline">Shop: 314-367-4283</li>
+            <!-- IG Link -->
+            <li>
+                <a href="https://www.instagram.com/von_thebarber?igsh=OG85bzR0NWhwaWxk" target="_blank">
+                    <span class="icon">
+                        <ion-icon class="logo-instagram" name="logo-instagram"></ion-icon>
+                    </span>
+                </a>
+            </li>
+            <hr>
+            <br>
+            <br>
+            <br>
+            <li>&copy;Bradford Designs</li>
+        </ul>     
+    </footer>
+       <!-- Pop-Up Modal -->
+       <div id="popup" class="popup">
+        <div class="popup-content">
+            <h2>Book With Master Barber Von!</h2>
+            <h3>Satisfaction With Each Quality Cut</h3>
+            <div class="video-container">
+                <video autoplay loop muted>
+                    <source src="Videos/modal_video.mp4" type="video/mp4">
+                </video>
+            </div>
+            <p id="popup-paragraph" class="popup-text">Book your appointment today for the premium grooming experience!</p>
+            <a href="https://app.thecut.co/barbers/VTBcuts" class="book-button">Book Now</a>
+        </div>
+    </div>
+
+
+   <script src="JavaScript/index.js"></script>
+   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
