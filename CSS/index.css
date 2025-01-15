@@ -3,7 +3,7 @@ body, html {
   padding: 0;
   height: 100%;
   font-family: Montserrat;
-  background-color: black;
+  background-color: white;
 }
 
 /* Banner Section Styling */
@@ -481,6 +481,7 @@ body, html {
 
   .main-container {
     flex-direction: column; 
+    
   }
 
   .left-column, .right-column {
