@@ -34,3 +34,132 @@ Footer With Instagram Integration
 
 
 
+
+
+
+
+Responsive Web Design For Tablet:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+![Screenshot (235)](https://github.com/user-attachments/assets/06bf0f1a-ae78-4a8f-84ea-3b25ded92f06)
+![Screenshot (236)](https://github.com/user-attachments/assets/bf9fc26a-5dc7-4f10-ac74-8d2f51f52f14)
+![Screenshot (247)](https://github.com/user-attachments/assets/d3637876-e834-4af4-aa77-5560acbeba63)
+![Screenshot (248)](https://github.com/user-attachments/assets/85d3fdf7-324c-4b3d-b592-41d6feddc500)
+
+
+
+
+
+
+
+Responsive Design For Mobile:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+![Screenshot (249)](https://github.com/user-attachments/assets/31e1dd15-b2c7-4fe0-8c5e-e2c468d5bc95)
+![Screenshot (250)](https://github.com/user-attachments/assets/6c70b39b-f607-4a09-89e9-dd73a385c311)
+![Screenshot (251)](https://github.com/user-attachments/assets/094458f9-d359-45b7-b875-0e54897797d3)
+![Screenshot (252)](https://github.com/user-attachments/assets/9ef4d65a-2aa0-4673-be5c-5b491def4357)
+![Screenshot (253)](https://github.com/user-attachments/assets/12010bbe-0785-40cd-83bf-1ac638b06fad)
+
+
+
+
+
+
+
+
+
+
